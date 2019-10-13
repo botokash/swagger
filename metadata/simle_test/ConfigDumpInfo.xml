@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.6">
+	<ConfigVersions>
+		<Metadata name="Configuration.Конфигурация" id="e37a128a-f661-432b-bf04-cd684c801529" configVersion="dc6718503f0de94298096bbde5c6417900000000"/>
+		<Metadata name="HTTPService.Test" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5" configVersion="000e18219985b0409fca84f942ccb81b00000000">
+			<Metadata name="HTTPService.Test.URLTemplate.Товары.Method.GET" id="37c09b52-b277-449b-9014-b6f53ef079a5"/>
+			<Metadata name="HTTPService.Test.URLTemplate.Товары" id="41938c84-8bbf-4103-8562-3b8a2842fdde"/>
+			<Metadata name="HTTPService.Test.URLTemplate.Пользователи.Method.GET" id="bb8c60a5-967c-442b-aa08-e21993f12635"/>
+			<Metadata name="HTTPService.Test.URLTemplate.Пользователи" id="e77490ee-a781-430a-8c2b-05130c5f52ad"/>
+		</Metadata>
+		<Metadata name="HTTPService.Test.Module" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5.0" configVersion="df76ff7017b432448aa350794360595100000000"/>
+		<Metadata name="Language.Русский" id="da57c5b9-fa1c-454a-aa3f-6da285dd9e2e" configVersion="e0c521315e94a7488f580e627129dff000000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
