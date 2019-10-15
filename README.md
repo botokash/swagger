@@ -47,4 +47,4 @@
 КонецЕсли;
 ```
 
-Пример смотрим в скрипте *test_specgenerator.os*
+Пример получения спецификации в скрипте [example_specgenerator.os](https://github.com/botokash/swagger/blob/master/examples/script/example_specgenerator.os)
