@@ -48,3 +48,13 @@
 ```
 
 Пример получения спецификации в скрипте [example_specgenerator.os](https://github.com/botokash/swagger/blob/master/examples/script/example_specgenerator.os)
+
+## Simple-UI
+
+Пример реализация быстрого каталогизатора спецификаций внутри компании. Используем готовый [swagger-ui](https://github.com/swagger-api/swagger-ui), rest сервисы на oscript и IIS.
+
+1. Создаем виртуальный каталог "onec-swagger-ui", закидываем внутрь [dist](https://github.com/swagger-api/swagger-ui/tree/master/dist) из репозитария swagger-ui.
+2. Создаем приложение "onec-swagger-admin", внутрь ложим [rest-admin](https://github.com/botokash/swagger/tree/master/simple-ui/rest-admin).
+3. Заменяем index.html на [новый](https://github.com/botokash/swagger/blob/master/simple-ui/index.html).
+4. В новом index.html указываем в переменной ```admin_url``` свой сервер IIS публикаци rest-admin.
+ 5. Загрузка спецификаций будет происходить скриптом [upload.os](https://github.com/botokash/swagger/blob/master/simple-ui/upload.os) следующей командой: ```oscript .\upload.os -name ИмяПроекта -path ПутьКВыгрузкеФайлов -type xml -adminurl http://ВашСервер/onec-swagger-admin/```
