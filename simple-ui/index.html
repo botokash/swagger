@@ -38,7 +38,7 @@
     <script>
     window.onload = function() {
 	
-	  var admin_url = 'http://vm-cont/onec-swagger-admin/'
+	  var admin_url = 'http://localhost/onec-swagger-admin/'
 	  
 	  const Http = new XMLHttpRequest();
 	  Http.open("GET", admin_url + 'list.os');
@@ -64,6 +64,7 @@
 	    const ui = SwaggerUIBundle({
 		  urls: service_urls,
 		  dom_id: '#swagger-ui',
+		  validatorUrl: null,
 		  deepLinking: true,
 		  presets: [
 		    SwaggerUIBundle.presets.apis,
