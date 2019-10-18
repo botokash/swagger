@@ -130,7 +130,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<HTTPService>Example</HTTPService>
+			<HTTPService>UserAPI</HTTPService>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -2,11 +2,18 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.6">
 	<ConfigVersions>
 		<Metadata name="Configuration.Конфигурация" id="e37a128a-f661-432b-bf04-cd684c801529" configVersion="dc6718503f0de94298096bbde5c6417900000000"/>
-		<Metadata name="HTTPService.Example" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5" configVersion="87077ad3faca4f4badfc344951dec80200000000">
-			<Metadata name="HTTPService.Example.URLTemplate.Пользователи.Method.GET" id="8e641ca0-68a2-40e3-9d97-9f349847fdea"/>
-			<Metadata name="HTTPService.Example.URLTemplate.Пользователи" id="e5675e9e-b974-4a43-a001-6681094141d2"/>
+		<Metadata name="HTTPService.UserAPI" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5" configVersion="5db6b52b9370b24e8f099a8dda75154b00000000">
+			<Metadata name="HTTPService.UserAPI.URLTemplate.Пользователь.Method.PUT" id="1c256c1e-6a95-44d9-a936-d1eaeab26f42"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.Пользователь.Method.GET" id="2e8c541e-d739-4dc3-a9a0-02858f7eb8df"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.Пользователь.Method.PATCH" id="38835038-75c7-43d3-9e8b-64417cfaa233"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.Пользователь.Method.DELETE" id="43196a63-bafe-4bb3-b7ea-fbe0f104a592"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.ПользовательНовый.Method.POST" id="4a088148-ade7-4fbe-a6c1-866df6477d2f"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.ПользователиСписок.Method.GET" id="5980f387-655c-4c88-8461-dea409ac481c"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.ПользователиСписок" id="68202870-65cf-4b9e-9194-79e357de6593"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.Пользователь" id="6871c9f8-b566-4acf-9116-dc92858bcd52"/>
+			<Metadata name="HTTPService.UserAPI.URLTemplate.ПользовательНовый" id="6f4a6899-97aa-488a-af32-cebfc8ec95b8"/>
 		</Metadata>
-		<Metadata name="HTTPService.Example.Module" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5.0" configVersion="b96814c6c6cae94bba3e12a5a4f3198a00000000"/>
+		<Metadata name="HTTPService.UserAPI.Module" id="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5.0" configVersion="0db16cd5775dd34d9add9b51a27050ab00000000"/>
 		<Metadata name="Language.Русский" id="da57c5b9-fa1c-454a-aa3f-6da285dd9e2e" configVersion="e0c521315e94a7488f580e627129dff000000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
