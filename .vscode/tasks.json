@@ -1,0 +1,54 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "windows": {
+        "command": "cmd",
+        "args": ["/c", "chcp 65001 && "]
+    },
+    "linux": {
+        "command": "sh",
+        "args": ["-c"]
+    },
+    "type": "shell",
+    "tasks": [
+        {
+            "label": "Exec current feature",
+            "type": "shell",
+            "args": [
+                "oscript",
+                "C:/Program files/OneScript/lib/1bdd/src/bdd.os",
+                "exec",
+                "${file}",
+                // "-fail-fast",
+                "-debug",
+                "off"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Exec current feature + debug",
+            "type": "shell",
+            "args": [
+                "oscript",
+                "C:/Program files/OneScript/lib/1bdd/src/bdd.os",
+                "exec",
+                "${file}",
+                // "-fail-fast",
+                "-debug",
+                "on"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Exec current test",
+            "type": "shell",
+            "args": [
+                "1testrunner",
+                "-run",
+                "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
