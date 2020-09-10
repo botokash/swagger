@@ -14,7 +14,10 @@
             "description": ""
         }
     ],
-    "schemes": [],
+    "schemes": [
+        "https",
+        "http"
+    ],
     "paths": {
         "/user/list": {
             "get": {
