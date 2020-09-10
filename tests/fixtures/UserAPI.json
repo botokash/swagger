@@ -4,17 +4,14 @@
         "description": "API управления доступом",
         "version": "1.0",
         "title": "UserAPI",
-        "termsOfService": "",
-        "contact": "",
-        "license": ""
+        "termsOfService": ""
     },
     "host": "",
     "basePath": "/user_api",
     "tags": [
         {
             "name": "user",
-            "description": "",
-            "externalDocs": ""
+            "description": ""
         }
     ],
     "schemes": [],
@@ -26,7 +23,6 @@
                 ],
                 "summary": "Получить список пользователей",
                 "description": "Возвращает полный список пользователей в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -39,8 +35,7 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             }
         },
         "/user/{userID}": {
@@ -50,7 +45,6 @@
                 ],
                 "summary": "Получить свойства пользователя",
                 "description": "Возвращает все свойства указанного пользователя в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -62,8 +56,7 @@
                         "description": "GUID пользователя ИБ",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     }
                 ],
                 "responses": {
@@ -76,8 +69,7 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             },
             "patch": {
                 "tags": [
@@ -85,7 +77,6 @@
                 ],
                 "summary": "Изменить свойство пользователя",
                 "description": "Изменяет одно свойство указанного пользователя в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -97,8 +88,7 @@
                         "description": "GUID пользователя ИБ",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     },
                     {
                         "name": "property",
@@ -106,8 +96,7 @@
                         "description": "ключ изменяемого свойства",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     },
                     {
                         "name": "value",
@@ -115,8 +104,7 @@
                         "description": "новое значение",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     }
                 ],
                 "responses": {
@@ -129,8 +117,7 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             },
             "put": {
                 "tags": [
@@ -138,7 +125,6 @@
                 ],
                 "summary": "Изменить все свойства пользователя",
                 "description": "Изменяет все свойства указанного пользователя в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -150,8 +136,7 @@
                         "description": "новые свойства пользователя",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     },
                     {
                         "name": "userID",
@@ -159,8 +144,7 @@
                         "description": "GUID пользователя ИБ",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     }
                 ],
                 "responses": {
@@ -173,8 +157,7 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             },
             "delete": {
                 "tags": [
@@ -182,7 +165,6 @@
                 ],
                 "summary": "Удалить пользователя",
                 "description": "Удаляет указанного пользователя в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -194,8 +176,7 @@
                         "description": "GUID пользователя ИБ",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     }
                 ],
                 "responses": {
@@ -208,8 +189,7 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             }
         },
         "/user": {
@@ -219,7 +199,6 @@
                 ],
                 "summary": "Создать нового пользователя",
                 "description": "Создает нового пользователя в базе 1С",
-                "operationId": "",
                 "consumes": [],
                 "produces": [
                     "plain/text"
@@ -231,8 +210,7 @@
                         "description": "свойства нового пользователя",
                         "required": true,
                         "type": "string",
-                        "format": "",
-                        "enum": ""
+                        "format": ""
                     }
                 ],
                 "responses": {
@@ -242,12 +220,12 @@
                     "500": {
                         "description": "внутренняя ошибка сервера"
                     }
-                },
-                "security": ""
+                }
             }
         }
     },
-    "securityDefinitions": "",
-    "definitions": "",
-    "externalDocs": ""
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    }
 }
