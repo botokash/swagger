@@ -1,0 +1,234 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API управления доступом",
+        "version": "1.0",
+        "title": "UserAPI",
+        "termsOfService": ""
+    },
+    "host": "",
+    "basePath": "/user_api",
+    "tags": [
+        {
+            "name": "user",
+            "description": ""
+        }
+    ],
+    "schemes": [
+        "https",
+        "http"
+    ],
+    "paths": {
+        "/user/list": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Получить список пользователей",
+                "description": "Возвращает полный список пользователей в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": "",
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/user/{userID}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Получить свойства пользователя",
+                "description": "Возвращает все свойства указанного пользователя в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": [
+                    {
+                        "name": "userID",
+                        "in": "path",
+                        "description": "GUID пользователя ИБ",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "404": {
+                        "description": "пользователь по userID не найден"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Изменить свойство пользователя",
+                "description": "Изменяет одно свойство указанного пользователя в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": [
+                    {
+                        "name": "userID",
+                        "in": "path",
+                        "description": "GUID пользователя ИБ",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    },
+                    {
+                        "name": "property",
+                        "in": "query",
+                        "description": "ключ изменяемого свойства",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    },
+                    {
+                        "name": "value",
+                        "in": "query",
+                        "description": "новое значение",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "404": {
+                        "description": "пользователь по userID не найден"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Изменить все свойства пользователя",
+                "description": "Изменяет все свойства указанного пользователя в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "новые свойства пользователя",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    },
+                    {
+                        "name": "userID",
+                        "in": "path",
+                        "description": "GUID пользователя ИБ",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "404": {
+                        "description": "пользователь по userID не найден"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Удалить пользователя",
+                "description": "Удаляет указанного пользователя в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": [
+                    {
+                        "name": "userID",
+                        "in": "path",
+                        "description": "GUID пользователя ИБ",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "404": {
+                        "description": "пользователь по userID не найден"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/user": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Создать нового пользователя",
+                "description": "Создает нового пользователя в базе 1С",
+                "consumes": [],
+                "produces": [
+                    "plain/text"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "свойства нового пользователя",
+                        "required": true,
+                        "type": "string",
+                        "format": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "запрос выполнен"
+                    },
+                    "500": {
+                        "description": "внутренняя ошибка сервера"
+                    }
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    }
+}

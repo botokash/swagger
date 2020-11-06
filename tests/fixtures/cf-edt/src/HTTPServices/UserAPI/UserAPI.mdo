@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c47bb6a8-9fd3-4c29-8b21-21c6b3d67ba5">
+  <name>UserAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>API управления доступом</value>
+  </synonym>
+  <comment>1.0</comment>
+  <rootURL>user_api</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="68202870-65cf-4b9e-9194-79e357de6593">
+    <name>ПользователиСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>user</value>
+    </synonym>
+    <template>/user/list</template>
+    <methods uuid="5980f387-655c-4c88-8461-dea409ac481c">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <comment>Получить список пользователей</comment>
+      <handler>ПользователиСписокGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6871c9f8-b566-4acf-9116-dc92858bcd52">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>user</value>
+    </synonym>
+    <template>/user/{userID}</template>
+    <methods uuid="2e8c541e-d739-4dc3-a9a0-02858f7eb8df">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <comment>Получить свойства пользователя</comment>
+      <handler>ПользовательGET</handler>
+    </methods>
+    <methods uuid="38835038-75c7-43d3-9e8b-64417cfaa233">
+      <name>PATCH</name>
+      <synonym>
+        <key>ru</key>
+        <value>PATCH</value>
+      </synonym>
+      <comment>Изменить свойство пользователя</comment>
+      <httpMethod>PATCH</httpMethod>
+      <handler>ПользовательPATCH</handler>
+    </methods>
+    <methods uuid="1c256c1e-6a95-44d9-a936-d1eaeab26f42">
+      <name>PUT</name>
+      <synonym>
+        <key>ru</key>
+        <value>PUT</value>
+      </synonym>
+      <comment>Изменить все свойства пользователя</comment>
+      <httpMethod>PUT</httpMethod>
+      <handler>ПользовательPUT</handler>
+    </methods>
+    <methods uuid="43196a63-bafe-4bb3-b7ea-fbe0f104a592">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <comment>Удалить пользователя</comment>
+      <httpMethod>DELETE</httpMethod>
+      <handler>ПользовательDELETE</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6f4a6899-97aa-488a-af32-cebfc8ec95b8">
+    <name>ПользовательНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>user</value>
+    </synonym>
+    <template>/user</template>
+    <methods uuid="4a088148-ade7-4fbe-a6c1-866df6477d2f">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment>Создать нового пользователя</comment>
+      <httpMethod>POST</httpMethod>
+      <handler>ПользовательНовыйPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
